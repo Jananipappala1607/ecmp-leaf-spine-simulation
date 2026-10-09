@@ -1,6 +1,6 @@
 # ECMP Load Distribution and Failure Recovery in a Leaf-Spine Fabric
 
-A Python simulation of **Equal-Cost Multi-Path (ECMP)** routing in a leaf-spine data-centre network. It measures how flows spread across links, finds uneven utilisation, and evaluates traffic recovery after a link fails.
+A Python simulation of Equal-Cost Multi-Path (ECMP) routing in a leaf-spine data-centre network. It measures how flows spread across links, finds uneven utilisation, and evaluates traffic recovery after a link fails.
 
 ![Architecture](results/figures/ecmp_leaf_spine_architecture.png)
 
@@ -18,10 +18,10 @@ A Python simulation of **Equal-Cost Multi-Path (ECMP)** routing in a leaf-spine 
 Flows are assigned to paths with `MD5("src-dst-flow") mod (available paths)`. When a link fails, its paths are removed and flows are re-hashed over the survivors.
 
 ## Scenarios
-1. **Baseline ECMP** – 33 Gbps, no failure
-2. **Single-link failure** – baseline traffic, L1–S2 down
-3. **High-traffic stress** – 95 Gbps, no failure
-4. **Stress + link failure** – 95 Gbps, L1–S2 down
+1. Baseline ECMP – 33 Gbps, no failure
+2. Single-link failure – baseline traffic, L1–S2 down
+3. High-traffic stress – 95 Gbps, no failure
+4. Stress + link failure – 95 Gbps, L1–S2 down
 
 ## Results
 | Scenario | Max util. | Avg util. | Std dev | Link Jain fairness | Overloaded links |
@@ -31,7 +31,7 @@ Flows are assigned to paths with `MD5("src-dst-flow") mod (available paths)`. Wh
 | High-traffic stress | 126.7% | 105.6% | 13.29 | 0.9844 | 6 |
 | Stress + link failure | 206.7% | 105.6% | 54.22 | 0.7913 | 6 |
 
-**Failure recovery (L1–S2):** 4.0 Gbps affected, 4.0 Gbps recovered, 0 Gbps without a path, so recovery is **100%**.
+Failure recovery (L1–S2): 4.0 Gbps affected, 4.0 Gbps recovered, 0 Gbps without a path, so recovery is 100%.
 
 ### Key findings
 - ECMP is uneven even at low load: baseline utilisation ranged from 13.3% to 66.7%. The 12 L1→L4 flows split 6/2/4 instead of 4/4/4.
@@ -58,14 +58,6 @@ results/figures/            7 PNG graphs
 results/data/               summary and per-link CSV files
 ```
 
-## Limitations
-- Simulation only; no real switches or emulator.
-- Equal 15 Gbps links and fixed 1 Gbps flows.
-- Static traffic and a single link failure.
-- MD5 hashing instead of a hardware switch hash.
-- No packet-level effects (loss, queueing, TCP, reconvergence time).
 
-## Team
-| Member | Contribution |
-|---|---|
-| [Name] | [Role] |
+
+
