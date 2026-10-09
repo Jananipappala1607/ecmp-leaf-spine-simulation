@@ -1,0 +1,49 @@
+Scenario,Link,Traffic_Gbps,Capacity_Gbps,Utilization_Percent,Status
+Baseline ECMP,L1-S1,10.0,15.0,66.67,OK
+Baseline ECMP,L1-S2,4.0,15.0,26.67,OK
+Baseline ECMP,L1-S3,4.0,15.0,26.67,OK
+Baseline ECMP,L2-S1,7.0,15.0,46.67,OK
+Baseline ECMP,L2-S2,3.0,15.0,20.0,OK
+Baseline ECMP,L2-S3,5.0,15.0,33.33,OK
+Baseline ECMP,L3-S1,9.0,15.0,60.0,OK
+Baseline ECMP,L3-S2,4.0,15.0,26.67,OK
+Baseline ECMP,L3-S3,2.0,15.0,13.33,OK
+Baseline ECMP,L4-S1,8.0,15.0,53.33,OK
+Baseline ECMP,L4-S2,3.0,15.0,20.0,OK
+Baseline ECMP,L4-S3,7.0,15.0,46.67,OK
+Single-Link Failure,L1-S1,11.0,15.0,73.33,OK
+Single-Link Failure,L1-S2,0.0,15.0,0.0,OK
+Single-Link Failure,L1-S3,7.0,15.0,46.67,OK
+Single-Link Failure,L2-S1,7.0,15.0,46.67,OK
+Single-Link Failure,L2-S2,3.0,15.0,20.0,OK
+Single-Link Failure,L2-S3,5.0,15.0,33.33,OK
+Single-Link Failure,L3-S1,10.0,15.0,66.67,OK
+Single-Link Failure,L3-S2,2.0,15.0,13.33,OK
+Single-Link Failure,L3-S3,3.0,15.0,20.0,OK
+Single-Link Failure,L4-S1,8.0,15.0,53.33,OK
+Single-Link Failure,L4-S2,1.0,15.0,6.67,OK
+Single-Link Failure,L4-S3,9.0,15.0,60.0,OK
+High-Traffic Stress,L1-S1,18.0,15.0,120.0,OVERLOADED
+High-Traffic Stress,L1-S2,18.0,15.0,120.0,OVERLOADED
+High-Traffic Stress,L1-S3,14.0,15.0,93.33,OK
+High-Traffic Stress,L2-S1,16.0,15.0,106.67,OVERLOADED
+High-Traffic Stress,L2-S2,15.0,15.0,100.0,OK
+High-Traffic Stress,L2-S3,14.0,15.0,93.33,OK
+High-Traffic Stress,L3-S1,15.0,15.0,100.0,OK
+High-Traffic Stress,L3-S2,18.0,15.0,120.0,OVERLOADED
+High-Traffic Stress,L3-S3,12.0,15.0,80.0,OK
+High-Traffic Stress,L4-S1,19.0,15.0,126.67,OVERLOADED
+High-Traffic Stress,L4-S2,15.0,15.0,100.0,OK
+High-Traffic Stress,L4-S3,16.0,15.0,106.67,OVERLOADED
+Stress + Link Failure,L1-S1,31.0,15.0,206.67,OVERLOADED
+Stress + Link Failure,L1-S2,0.0,15.0,0.0,OK
+Stress + Link Failure,L1-S3,19.0,15.0,126.67,OVERLOADED
+Stress + Link Failure,L2-S1,16.0,15.0,106.67,OVERLOADED
+Stress + Link Failure,L2-S2,15.0,15.0,100.0,OK
+Stress + Link Failure,L2-S3,14.0,15.0,93.33,OK
+Stress + Link Failure,L3-S1,20.0,15.0,133.33,OVERLOADED
+Stress + Link Failure,L3-S2,10.0,15.0,66.67,OK
+Stress + Link Failure,L3-S3,15.0,15.0,100.0,OK
+Stress + Link Failure,L4-S1,27.0,15.0,180.0,OVERLOADED
+Stress + Link Failure,L4-S2,5.0,15.0,33.33,OK
+Stress + Link Failure,L4-S3,18.0,15.0,120.0,OVERLOADED

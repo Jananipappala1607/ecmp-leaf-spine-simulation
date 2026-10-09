@@ -1,0 +1,5 @@
+Scenario,Offered Traffic (Gbps),Max Utilization (%),Average Utilization (%),Std Dev (%),Link Fairness,Path Fairness,Overloaded Links,Recovery (%)
+Baseline ECMP,33.0,66.67,36.67,16.67,0.8288,0.8049,0,
+Single-Link Failure,33.0,73.33,36.67,23.49,0.709,0.751,0,100.0
+High-Traffic Stress,95.0,126.67,105.56,13.29,0.9844,0.9413,6,
+Stress + Link Failure,95.0,206.67,105.56,54.22,0.7913,0.8538,6,
